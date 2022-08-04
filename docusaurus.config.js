@@ -52,6 +52,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: "img/logo-text.png",
       navbar: {
         title: "Chainify",
         logo: {
@@ -115,7 +116,6 @@ const config = {
         defaultMode: "light",
         disableSwitch: true,
       },
-      image: "img/logo-text.png",
     }),
 };
 
