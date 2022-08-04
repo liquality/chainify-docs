@@ -2,46 +2,44 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Let's discover **Chainify in less than 5 minutes**.
 
 ## Getting Started
 
-Get started by **creating a new site**.
+Chainify exists to help developers build chain-agnostic applications. It's designed to run in any environment that can execute JavaScript (think websites, node scripts, etc.). While simple enough to use in a hackathon project, it's also robust enough to power production applications.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Installation
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+The easiest way to consume Chainify is via npm. 
 
 ```bash
-npm init docusaurus@latest my-website classic
+yarn add @chainify/<package_name>
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
+or
 
 ```bash
-cd my-website
-npm run start
+npm install @chainify/<package_name>
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+:::note
+You can see all available packages **[here](./packages/modules.md)**. 
+::: 
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## Local development
+
+[The repository](https://github.com/liquality/chainify) uses [yarn workspaces](https://yarnpkg.com/features/workspaces) for fast, reliable, and secure dependency management.
+
+The build system is using [Turborepo](https://turborepo.org/)
+
+#### Build all packages
+```bash
+yarn build
+```
+#### Run all tests
+```bash 
+yarn test
+```

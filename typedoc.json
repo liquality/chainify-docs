@@ -1,0 +1,10 @@
+{
+    "exclude": [
+      "../chainify/**/*.js",
+      "../chainify/**/node_modules/**"
+    ],
+    "tsconfig": "../chainify/tsconfig.json",
+    "entryPoints": ["../chainify"],
+    "entryPointStrategy": "packages",
+    "excludePrivate": "true"
+}
